@@ -34,6 +34,32 @@
   * Author: BootstrapMade.com
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
+<style>
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    th, td {
+      padding: 8px;
+      text-align: left;
+      border-bottom: 1px solid #ddd;
+    }
+    th {
+      background-color: #f2f2f2;
+    }
+    .highlight-similar {
+      background-color: #c8e6c9;
+    }
+    .highlight-different {
+      background-color: #ffcdd2;
+    }
+  </style>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      // Aquí puedes agregar cualquier código de jQuery necesario
+    });
+  </script>
 </head>
 
 <body>
@@ -211,6 +237,68 @@
         <div class="section-header">
           <h3>Tabla comparativa</h3>
           <p>Diferencias y semejanzas entre XML y JSON</p>
+<table>
+    <tr>
+      <th></th>
+      <th>ASPECTOS</th>
+      <th>XML</th>
+      <th>JSON</th>
+    </tr>
+
+    <tr>
+      <td rowspan="2" class="highlight-similar"><b>Semejanzas</b></td>
+      <td>Uso</td>
+      <td>Comúnmente utilizado en servicios web SOAP</td>
+      <td>Ampliamente utilizado en aplicaciones web y APIs RESTful</td>
+    </tr>
+    <tr>
+      <td>Soporte</td>
+      <td>Amplio soporte en lenguajes y plataformas</td>
+      <td>Amplio soporte en lenguajes y plataformas</td>
+    </tr>
+
+    <tr>
+      <td rowspan="8" class="highlight-different"><b>Diferencias</b></td>
+      <td>Sintaxis</td>
+      <td>Utiliza etiquetas y atributos para estructurar los datos</td>
+      <td>Utiliza pares clave-valor para estructurar los datos</td>
+    </tr>
+    <tr>
+      <td>Legibilidad</td>
+      <td>Menos legible debido a las etiquetas y estructura compleja</td>
+      <td>Más legible debido a su estructura sencilla de clave-valor</td>
+    </tr>
+    <tr>
+      <td>Tamaño</td>
+      <td>Mayor tamaño debido a la inclusión de etiquetas</td>
+      <td>Menor tamaño debido a la estructura liviana de clave-valor</td>
+    </tr>
+    <tr>
+      <td>Comentarios</td>
+      <td>Permite comentarios dentro del documento para proporcionar información adicional o aclaraciones</td>
+      <td>No permite comentarios dentro del documento</td>
+    </tr>
+    <tr>
+      <td>Tipos de datos</td>
+      <td>Permite definir tipos de datos personalizados utilizando DTD o XML Schema</td>
+      <td>No tiene soporte nativo para tipos de datos personalizados</td>
+    </tr>
+    <tr>
+      <td>Parsing</td>
+      <td>El parsing es más lento debido a la estructura compleja y la necesidad de interpretar las etiquetas</td>
+      <td>El parsing es más rápido debido a la estructura simple de clave-valor</td>
+    </tr>
+    <tr>
+      <td>Interoperabilidad</td>
+      <td>Mayor dificultad para la interoperabilidad entre diferentes plataformas debido a la complejidad de la estructura</td>
+      <td>Facilita la interoperabilidad entre diferentes plataformas debido a su estructura simple y amplio soporte</td>
+    </tr>
+    <tr>
+      <td>Extensibilidad</td>
+      <td>Permite definir y utilizar vocabularios personalizados utilizando DTD o XML Schema</td>
+      <td>No tiene mecanismos de extensibilidad específicos, pero se puede añadir información adicional</td>
+    </tr>
+  </table>
         </div>
 
         
